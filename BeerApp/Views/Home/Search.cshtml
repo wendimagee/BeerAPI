@@ -1,0 +1,13 @@
+﻿@model List<Beer>
+
+<h2>Beers found: @Model.Count</h2>
+
+@foreach( Beer b in Model)
+{
+<div style="border">
+    <p>Name: @b.name</p>
+    <p>ABV: @b.abv</p>
+    <p>Description: @b.description</p>
+</div>
+
+}
